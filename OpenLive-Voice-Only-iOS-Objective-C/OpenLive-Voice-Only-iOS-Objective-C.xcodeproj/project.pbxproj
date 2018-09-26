@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		385F2F8B212262BE005D5301 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385F2F8A212262BE005D5301 /* Accelerate.framework */; };
+		A72C5DD01F7F8C13004F1EA2 /* RoleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C5DCF1F7F8C13004F1EA2 /* RoleButton.m */; };
+		A7B7E4BA1FD694BC00A5FB18 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7E4B91FD694A800A5FB18 /* SystemConfiguration.framework */; };
+		A7D6134F1F7DDEE60033A5CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D6134E1F7DDEE60033A5CC /* main.m */; };
+		A7D613521F7DDEE60033A5CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D613511F7DDEE60033A5CC /* AppDelegate.m */; };
+		A7D6135A1F7DDEE60033A5CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7D613591F7DDEE60033A5CC /* Assets.xcassets */; };
+		A7D6135D1F7DDEE60033A5CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D6135B1F7DDEE60033A5CC /* LaunchScreen.storyboard */; };
+		A7D613811F7DDFC00033A5CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D613801F7DDFC00033A5CC /* Main.storyboard */; };
+		A7D613871F7DE00C0033A5CC /* ChannelNameCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D613861F7DE00C0033A5CC /* ChannelNameCheck.m */; };
+		A7D6138B1F7DE0210033A5CC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D6138A1F7DE0210033A5CC /* MainViewController.m */; };
+		A7D6138F1F7DE0410033A5CC /* RoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D6138E1F7DE0410033A5CC /* RoomViewController.m */; };
+		A7D613941F7DE04E0033A5CC /* ChatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D613911F7DE04E0033A5CC /* ChatButton.m */; };
+		A7D613951F7DE04E0033A5CC /* InfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D613931F7DE04E0033A5CC /* InfoCell.m */; };
+		A7D6139C1F7DE06C0033A5CC /* AppID.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D613991F7DE06C0033A5CC /* AppID.m */; };
+		A7D6139D1F7DE06C0033A5CC /* InfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D6139B1F7DE06C0033A5CC /* InfoModel.m */; };
+		A7D613A21F7DE79D0033A5CC /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D613A11F7DE79D0033A5CC /* libresolv.tbd */; };
+		A7D613A41F7DE7AA0033A5CC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D613A31F7DE7AA0033A5CC /* CoreTelephony.framework */; };
+		A7D613A61F7DE7B50033A5CC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D613A51F7DE7B50033A5CC /* AudioToolbox.framework */; };
+		A7D613A81F7DE7BF0033A5CC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D613A71F7DE7BF0033A5CC /* AVFoundation.framework */; };
+		A7D613AA1F7DE7CF0033A5CC /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D613A91F7DE7CF0033A5CC /* libc++.tbd */; };
+		A7D613AC1F7DE7EB0033A5CC /* AgoraAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D613AB1F7DE7EB0033A5CC /* AgoraAudioKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		385F2F8A212262BE005D5301 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		A72C5DCE1F7F8C13004F1EA2 /* RoleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoleButton.h; sourceTree = "<group>"; };
+		A72C5DCF1F7F8C13004F1EA2 /* RoleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoleButton.m; sourceTree = "<group>"; };
+		A7B7E4B91FD694A800A5FB18 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A7D6134A1F7DDEE60033A5CC /* OpenLive-Voice-Only-iOS-Objective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenLive-Voice-Only-iOS-Objective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7D6134E1F7DDEE60033A5CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A7D613501F7DDEE60033A5CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A7D613511F7DDEE60033A5CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A7D613591F7DDEE60033A5CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7D6135C1F7DDEE60033A5CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7D6135E1F7DDEE60033A5CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7D613801F7DDFC00033A5CC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A7D613851F7DE00C0033A5CC /* ChannelNameCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelNameCheck.h; sourceTree = "<group>"; };
+		A7D613861F7DE00C0033A5CC /* ChannelNameCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelNameCheck.m; sourceTree = "<group>"; };
+		A7D613891F7DE0210033A5CC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		A7D6138A1F7DE0210033A5CC /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A7D6138D1F7DE0410033A5CC /* RoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomViewController.h; sourceTree = "<group>"; };
+		A7D6138E1F7DE0410033A5CC /* RoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomViewController.m; sourceTree = "<group>"; };
+		A7D613901F7DE04E0033A5CC /* ChatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatButton.h; sourceTree = "<group>"; };
+		A7D613911F7DE04E0033A5CC /* ChatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatButton.m; sourceTree = "<group>"; };
+		A7D613921F7DE04E0033A5CC /* InfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCell.h; sourceTree = "<group>"; };
+		A7D613931F7DE04E0033A5CC /* InfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCell.m; sourceTree = "<group>"; };
+		A7D613981F7DE06C0033A5CC /* AppID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppID.h; sourceTree = "<group>"; };
+		A7D613991F7DE06C0033A5CC /* AppID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppID.m; sourceTree = "<group>"; };
+		A7D6139A1F7DE06C0033A5CC /* InfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoModel.h; sourceTree = "<group>"; };
+		A7D6139B1F7DE06C0033A5CC /* InfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoModel.m; sourceTree = "<group>"; };
+		A7D6139F1F7DE7910033A5CC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A7D613A11F7DE79D0033A5CC /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		A7D613A31F7DE7AA0033A5CC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A7D613A51F7DE7B50033A5CC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A7D613A71F7DE7BF0033A5CC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A7D613A91F7DE7CF0033A5CC /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A7D613AB1F7DE7EB0033A5CC /* AgoraAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraAudioKit.framework; path = OpenLiveVoice/libs/AgoraAudioKit.framework; sourceTree = "<group>"; };
+		A7D613B51F7DE8590033A5CC /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7D613471F7DDEE60033A5CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385F2F8B212262BE005D5301 /* Accelerate.framework in Frameworks */,
+				A7D613AC1F7DE7EB0033A5CC /* AgoraAudioKit.framework in Frameworks */,
+				A7D613AA1F7DE7CF0033A5CC /* libc++.tbd in Frameworks */,
+				A7D613A81F7DE7BF0033A5CC /* AVFoundation.framework in Frameworks */,
+				A7B7E4BA1FD694BC00A5FB18 /* SystemConfiguration.framework in Frameworks */,
+				A7D613A61F7DE7B50033A5CC /* AudioToolbox.framework in Frameworks */,
+				A7D613A41F7DE7AA0033A5CC /* CoreTelephony.framework in Frameworks */,
+				A7D613A21F7DE79D0033A5CC /* libresolv.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7237F582126A63100F2F397 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7D613981F7DE06C0033A5CC /* AppID.h */,
+				A7D613991F7DE06C0033A5CC /* AppID.m */,
+				A7D6139A1F7DE06C0033A5CC /* InfoModel.h */,
+				A7D6139B1F7DE06C0033A5CC /* InfoModel.m */,
+				A7D613851F7DE00C0033A5CC /* ChannelNameCheck.h */,
+				A7D613861F7DE00C0033A5CC /* ChannelNameCheck.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A7237F592126A63900F2F397 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7D613801F7DDFC00033A5CC /* Main.storyboard */,
+				A7D613901F7DE04E0033A5CC /* ChatButton.h */,
+				A7D613911F7DE04E0033A5CC /* ChatButton.m */,
+				A7D613921F7DE04E0033A5CC /* InfoCell.h */,
+				A7D613931F7DE04E0033A5CC /* InfoCell.m */,
+				A72C5DCE1F7F8C13004F1EA2 /* RoleButton.h */,
+				A72C5DCF1F7F8C13004F1EA2 /* RoleButton.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A7237F5A2126A64100F2F397 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7D613891F7DE0210033A5CC /* MainViewController.h */,
+				A7D6138A1F7DE0210033A5CC /* MainViewController.m */,
+				A7D6138D1F7DE0410033A5CC /* RoomViewController.h */,
+				A7D6138E1F7DE0410033A5CC /* RoomViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A7D613411F7DDEE60033A5CC = {
+			isa = PBXGroup;
+			children = (
+				A7D6134C1F7DDEE60033A5CC /* OpenLive-Voice-Only-iOS-Objective-C */,
+				A7D6134B1F7DDEE60033A5CC /* Products */,
+				A7D6139E1F7DE7910033A5CC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A7D6134B1F7DDEE60033A5CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7D6134A1F7DDEE60033A5CC /* OpenLive-Voice-Only-iOS-Objective-C.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7D6134C1F7DDEE60033A5CC /* OpenLive-Voice-Only-iOS-Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				A7237F5A2126A64100F2F397 /* Controllers */,
+				A7237F592126A63900F2F397 /* Views */,
+				A7237F582126A63100F2F397 /* Models */,
+				A7D6134D1F7DDEE60033A5CC /* Supporting Files */,
+			);
+			path = "OpenLive-Voice-Only-iOS-Objective-C";
+			sourceTree = "<group>";
+		};
+		A7D6134D1F7DDEE60033A5CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7D613591F7DDEE60033A5CC /* Assets.xcassets */,
+				A7D6135B1F7DDEE60033A5CC /* LaunchScreen.storyboard */,
+				A7D6135E1F7DDEE60033A5CC /* Info.plist */,
+				A7D6134E1F7DDEE60033A5CC /* main.m */,
+				A7D613501F7DDEE60033A5CC /* AppDelegate.h */,
+				A7D613511F7DDEE60033A5CC /* AppDelegate.m */,
+				A7D613B51F7DE8590033A5CC /* Define.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7D6139E1F7DE7910033A5CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				385F2F8A212262BE005D5301 /* Accelerate.framework */,
+				A7B7E4B91FD694A800A5FB18 /* SystemConfiguration.framework */,
+				A7D613AB1F7DE7EB0033A5CC /* AgoraAudioKit.framework */,
+				A7D613A91F7DE7CF0033A5CC /* libc++.tbd */,
+				A7D613A71F7DE7BF0033A5CC /* AVFoundation.framework */,
+				A7D613A51F7DE7B50033A5CC /* AudioToolbox.framework */,
+				A7D613A31F7DE7AA0033A5CC /* CoreTelephony.framework */,
+				A7D613A11F7DE79D0033A5CC /* libresolv.tbd */,
+				A7D6139F1F7DE7910033A5CC /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7D613491F7DDEE60033A5CC /* OpenLive-Voice-Only-iOS-Objective-C */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7D613771F7DDEE60033A5CC /* Build configuration list for PBXNativeTarget "OpenLive-Voice-Only-iOS-Objective-C" */;
+			buildPhases = (
+				A7D613461F7DDEE60033A5CC /* Sources */,
+				A7D613471F7DDEE60033A5CC /* Frameworks */,
+				A7D613481F7DDEE60033A5CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenLive-Voice-Only-iOS-Objective-C";
+			productName = OpenLiveVoice;
+			productReference = A7D6134A1F7DDEE60033A5CC /* OpenLive-Voice-Only-iOS-Objective-C.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7D613421F7DDEE60033A5CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = CavanSu;
+				TargetAttributes = {
+					A7D613491F7DDEE60033A5CC = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A7D613451F7DDEE60033A5CC /* Build configuration list for PBXProject "OpenLive-Voice-Only-iOS-Objective-C" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7D613411F7DDEE60033A5CC;
+			productRefGroup = A7D6134B1F7DDEE60033A5CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7D613491F7DDEE60033A5CC /* OpenLive-Voice-Only-iOS-Objective-C */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7D613481F7DDEE60033A5CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7D613811F7DDFC00033A5CC /* Main.storyboard in Resources */,
+				A7D6135D1F7DDEE60033A5CC /* LaunchScreen.storyboard in Resources */,
+				A7D6135A1F7DDEE60033A5CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7D613461F7DDEE60033A5CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7D6139C1F7DE06C0033A5CC /* AppID.m in Sources */,
+				A7D613521F7DDEE60033A5CC /* AppDelegate.m in Sources */,
+				A7D613871F7DE00C0033A5CC /* ChannelNameCheck.m in Sources */,
+				A7D6134F1F7DDEE60033A5CC /* main.m in Sources */,
+				A7D613951F7DE04E0033A5CC /* InfoCell.m in Sources */,
+				A7D6138B1F7DE0210033A5CC /* MainViewController.m in Sources */,
+				A7D6138F1F7DE0410033A5CC /* RoomViewController.m in Sources */,
+				A72C5DD01F7F8C13004F1EA2 /* RoleButton.m in Sources */,
+				A7D613941F7DE04E0033A5CC /* ChatButton.m in Sources */,
+				A7D6139D1F7DE06C0033A5CC /* InfoModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A7D6135B1F7DDEE60033A5CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7D6135C1F7DDEE60033A5CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7D613751F7DDEE60033A5CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7D613761F7DDEE60033A5CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7D613781F7DDEE60033A5CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenLive-Voice-Only-iOS-Objective-C/",
+				);
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "OpenLive-Voice-Only-iOS-Objective-C/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.agora.OpenLive-Voice-Only-iOS-Objective-C";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7D613791F7DDEE60033A5CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenLive-Voice-Only-iOS-Objective-C/",
+				);
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "OpenLive-Voice-Only-iOS-Objective-C/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.agora.OpenLive-Voice-Only-iOS-Objective-C";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7D613451F7DDEE60033A5CC /* Build configuration list for PBXProject "OpenLive-Voice-Only-iOS-Objective-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7D613751F7DDEE60033A5CC /* Debug */,
+				A7D613761F7DDEE60033A5CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7D613771F7DDEE60033A5CC /* Build configuration list for PBXNativeTarget "OpenLive-Voice-Only-iOS-Objective-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7D613781F7DDEE60033A5CC /* Debug */,
+				A7D613791F7DDEE60033A5CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7D613421F7DDEE60033A5CC /* Project object */;
+}
