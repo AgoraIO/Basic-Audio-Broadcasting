@@ -41,25 +41,25 @@ static NSString *cellID = @"infoID";
 - (void)loadAgoraKit {
     self.agoraKit = [AgoraRtcEngineKit sharedEngineWithAppId:[AppID appID] delegate:self];
     
-    [self.agoraKit setChannelProfile:AgoraChannelProfileLiveBroadcasting];
+    [self.agoraKit setChannelProfile:AgoraRtc_ChannelProfile_LiveBroadcasting];
     
-    AgoraClientRole role;
+    AgoraRtcClientRole role;
     
     switch (self.roleType) {
         case RoleTypeBroadcaster:
-            role = AgoraClientRoleBroadcaster;
+            role = AgoraRtc_ClientRole_Broadcaster;
             self.roleButton.selected = NO;
             [self appendInfoToTableViewWithInfo:@"Set Broadcaster"];
             break;
             
         case RoleTypeAudience:
-            role = AgoraClientRoleAudience;
+            role = AgoraRtc_ClientRole_Audience;
             self.roleButton.selected = YES;
             [self appendInfoToTableViewWithInfo:@"Set Audience"];
             break;
     }
-    [self.agoraKit setClientRole:role];
-    [self.agoraKit joinChannelByToken:nil channelId:self.channelName info:nil uid:0 joinSuccess:nil];
+    [self.agoraKit setClientRole:role withKey:nil];
+    [self.agoraKit joinChannelByKey:nil channelName:self.channelName info:nil uid:0 joinSuccess:nil];
 }
 
 #pragma mark- Append info to tableView to display
@@ -77,7 +77,7 @@ static NSString *cellID = @"infoID";
 
 - (IBAction)clickHungUpButton:(UIButton *)sender {
     __weak typeof(RoomViewController) *weakself = self;
-    [self.agoraKit leaveChannel:^(AgoraChannelStats * _Nonnull stat) {
+    [self.agoraKit leaveChannel:^(AgoraRtcStats * _Nonnull stat) {
         [weakself dismissViewControllerAnimated:YES completion:nil];
     }];
 }
@@ -92,11 +92,11 @@ static NSString *cellID = @"infoID";
 }
 
 - (IBAction)clickRoleButton:(UIButton *)sender {
-    AgoraClientRole role = sender.selected ? AgoraClientRoleAudience : AgoraClientRoleBroadcaster;
-    if (role == AgoraClientRoleBroadcaster && self.speakerButton.selected) {
+    AgoraRtcClientRole role = sender.selected ? AgoraRtc_ClientRole_Audience : AgoraRtc_ClientRole_Broadcaster;
+    if (role == AgoraRtc_ClientRole_Broadcaster && self.speakerButton.selected) {
         self.speakerButton.selected = NO;
     }
-    [self.agoraKit setClientRole:role];
+    [self.agoraKit setClientRole:role withKey:nil];
 }
 
 #pragma mark- <AgoraRtcEngineDelegate>
@@ -116,35 +116,35 @@ static NSString *cellID = @"infoID";
     [self appendInfoToTableViewWithInfo:@"ConnectionDidLost"];
 }
 
-- (void)rtcEngine:(AgoraRtcEngineKit *)engine didOccurError:(AgoraErrorCode)errorCode {
+- (void)rtcEngine:(AgoraRtcEngineKit *)engine didOccurError:(AgoraRtcErrorCode)errorCode {
     [self appendInfoToTableViewWithInfo:[NSString stringWithFormat:@"Error Code:%zd", errorCode]];
 }
 
-- (void)rtcEngine:(AgoraRtcEngineKit *)engine didOfflineOfUid:(NSUInteger)uid reason:(AgoraUserOfflineReason)reason {
+- (void)rtcEngine:(AgoraRtcEngineKit *)engine didOfflineOfUid:(NSUInteger)uid reason:(AgoraRtcUserOfflineReason)reason {
     [self appendInfoToTableViewWithInfo:[NSString stringWithFormat:@"Uid:%zd didOffline reason:%zd", uid, reason]];
 }
 
-- (void)rtcEngine:(AgoraRtcEngineKit *)engine didAudioRouteChanged:(AgoraAudioOutputRouting)routing {
+- (void)rtcEngine:(AgoraRtcEngineKit *)engine didAudioRouteChanged:(AgoraRtcAudioOutputRouting)routing {
     switch (routing) {
-        case AgoraAudioOutputRoutingDefault:
+        case AgoraRtc_AudioOutputRouting_Default:
             NSLog(@"AgoraRtc_AudioOutputRouting_Default");
             break;
-        case AgoraAudioOutputRoutingHeadset:
+        case AgoraRtc_AudioOutputRouting_Headset:
             NSLog(@"AgoraRtc_AudioOutputRouting_Headset");
             break;
-        case AgoraAudioOutputRoutingEarpiece:
+        case AgoraRtc_AudioOutputRouting_Earpiece:
             NSLog(@"AgoraRtc_AudioOutputRouting_Earpiece");
             break;
-        case AgoraAudioOutputRoutingHeadsetNoMic:
+        case AgoraRtc_AudioOutputRouting_HeadsetNoMic:
             NSLog(@"AgoraRtc_AudioOutputRouting_HeadsetNoMic");
             break;
-        case AgoraAudioOutputRoutingSpeakerphone:
+        case AgoraRtc_AudioOutputRouting_Speakerphone:
             NSLog(@"AgoraRtc_AudioOutputRouting_Speakerphone");
             break;
-        case AgoraAudioOutputRoutingLoudspeaker:
+        case AgoraRtc_AudioOutputRouting_Loudspeaker:
             NSLog(@"AgoraRtc_AudioOutputRouting_Loudspeaker");
             break;
-        case AgoraAudioOutputRoutingHeadsetBluetooth:
+        case AgoraRtc_AudioOutputRouting_HeadsetBluetooth:
             NSLog(@"AgoraRtc_AudioOutputRouting_HeadsetBluetooth");
             break;
         default:
@@ -152,8 +152,8 @@ static NSString *cellID = @"infoID";
     }
 }
 
-- (void)rtcEngine:(AgoraRtcEngineKit *)engine didClientRoleChanged:(AgoraClientRole)oldRole newRole:(AgoraClientRole)newRole {
-    if (newRole == AgoraClientRoleBroadcaster) {
+- (void)rtcEngine:(AgoraRtcEngineKit *)engine didClientRoleChanged:(AgoraRtcClientRole)oldRole newRole:(AgoraRtcClientRole)newRole {
+    if (newRole == AgoraRtc_ClientRole_Broadcaster) {
         [self appendInfoToTableViewWithInfo:@"Self changed to Broadcaster"];
     }
     else {

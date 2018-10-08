@@ -20,7 +20,7 @@ class MainViewController: UIViewController {
         
         let roomVC = segue.destination as! RoomViewController
         roomVC.roomName = roomNameTextField.text
-        if let value = sender as? NSNumber, let role = AgoraClientRole(rawValue: value.intValue) {
+        if let value = sender as? NSNumber, let role = AgoraRtcClientRole(rawValue: value.intValue) {
             roomVC.clientRole = role
         }
         roomVC.delegate = self
@@ -39,10 +39,10 @@ private extension MainViewController {
         
         let sheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         let broadcaster = UIAlertAction(title: "Broadcaster", style: .default) { [unowned self] _ in
-            self.enterRoom(withRole: .broadcaster)
+            self.enterRoom(withRole: .clientRole_Broadcaster)
         }
         let audience = UIAlertAction(title: "Audience", style: .default) { [unowned self] _ in
-            self.enterRoom(withRole: .audience)
+            self.enterRoom(withRole: .clientRole_Audience)
         }
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         sheet.addAction(broadcaster)
@@ -53,7 +53,7 @@ private extension MainViewController {
         present(sheet, animated: true, completion: nil)
     }
     
-    func enterRoom(withRole role: AgoraClientRole) {
+    func enterRoom(withRole role: AgoraRtcClientRole) {
         performSegue(withIdentifier: "mainToRoom", sender: NSNumber(value: role.rawValue))
     }
 }

@@ -21,7 +21,7 @@ class RoomViewController: UIViewController {
     @IBOutlet weak var speakerButton: UIButton!
     
     var roomName: String!
-    var clientRole = AgoraClientRole.audience {
+    var clientRole = AgoraRtcClientRole.clientRole_Audience {
         didSet {
             updateBroadcastButton()
         }
@@ -32,7 +32,7 @@ class RoomViewController: UIViewController {
     fileprivate var logs = [String]()
     
     fileprivate var isBroadcaster: Bool {
-        return clientRole == .broadcaster
+        return clientRole == .clientRole_Broadcaster
     }
     fileprivate var audioMuted = false {
         didSet {
@@ -61,9 +61,9 @@ class RoomViewController: UIViewController {
     
     @IBAction func doBroadcastPressed(_ sender: UIButton) {
         audioMuted = false
-        clientRole = isBroadcaster ? .audience : .broadcaster
+        clientRole = isBroadcaster ? .clientRole_Audience : .clientRole_Broadcaster
         
-        agoraKit.setClientRole(clientRole)
+        agoraKit.setClientRole(clientRole, withKey: nil)
     }
     
     @IBAction func doMuteAudioPressed(_ sender: UIButton) {
@@ -137,10 +137,10 @@ extension RoomViewController: UITableViewDataSource {
 private extension RoomViewController {
     func loadAgoraKit() {
         agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: KeyCenter.AppId, delegate: self)
-        agoraKit.setChannelProfile(.liveBroadcasting)
-        agoraKit.setClientRole(clientRole)
+        agoraKit.setChannelProfile(.channelProfile_LiveBroadcasting)
+        agoraKit.setClientRole(clientRole, withKey: nil)
         
-        let code = agoraKit.joinChannel(byToken: nil, channelId: roomName, info: nil, uid: 0, joinSuccess: nil)
+        let code = agoraKit.joinChannel(byKey: nil, channelName: roomName, info: nil, uid: 0, joinSuccess: nil)
         
         if code != 0 {
             DispatchQueue.main.async(execute: {
@@ -164,7 +164,7 @@ extension RoomViewController: AgoraRtcEngineDelegate {
         append(log: "Connection Lost")
     }
     
-    func rtcEngine(_ engine: AgoraRtcEngineKit, didOccurError errorCode: AgoraErrorCode) {
+    func rtcEngine(_ engine: AgoraRtcEngineKit, didOccurError errorCode: AgoraRtcErrorCode) {
         append(log: "Occur error: \(errorCode.rawValue)")
     }
     
@@ -176,11 +176,11 @@ extension RoomViewController: AgoraRtcEngineDelegate {
         append(log: "Did joined of uid: \(uid)")
     }
     
-    func rtcEngine(_ engine: AgoraRtcEngineKit, didOfflineOfUid uid: UInt, reason: AgoraUserOfflineReason) {
+    func rtcEngine(_ engine: AgoraRtcEngineKit, didOfflineOfUid uid: UInt, reason: AgoraRtcUserOfflineReason) {
         append(log: "Did offline of uid: \(uid), reason: \(reason.rawValue)")
     }
     
-    func rtcEngine(_ engine: AgoraRtcEngineKit, audioQualityOfUid uid: UInt, quality: AgoraNetworkQuality, delay: UInt, lost: UInt) {
+    func rtcEngine(_ engine: AgoraRtcEngineKit, audioQualityOfUid uid: UInt, quality: AgoraRtcQuality, delay: UInt, lost: UInt) {
         append(log: "Audio Quality of uid: \(uid), quality: \(quality.rawValue), delay: \(delay), lost: \(lost)")
     }
     
