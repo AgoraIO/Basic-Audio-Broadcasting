@@ -11,11 +11,7 @@ With this sample app, you can:
 - Mute / unmute audio
 - Switch speaker
 
-A tutorial demo can be found here: [Agora-iOS-Voice-Tutorial-Swift-1to1](https://github.com/AgoraIO/Agora-iOS-Voice-Tutorial-Swift-1to1)
-
-You can find demo for Android here:
-
-- [OpenLive-Voice-Only-Android](https://github.com/AgoraIO/OpenLive-Voice-Only-Android)
+A tutorial demo can be found here: [Agora-iOS-Voice-Tutorial-Swift-1to1](https://github.com/AgoraIO/Basic-Audio-Call/tree/master/One-to-One-Voice/Agora-iOS-Voice-Tutorial-Swift-1to1)
 
 ## Running the App
 First, create a developer account at [Agora.io](https://dashboard.agora.io/signin/), and obtain an App ID. Update "AppID.m" with your App ID.
@@ -36,7 +32,7 @@ Finally, Open OpenLive-Voice-Only-iOS-Objective-C.xcodeproj, connect your iPhone
 ## Connect Us
 
 - You can find full API document at [Document Center](https://docs.agora.io/en/)
-- You can file bugs about this demo at [issue](https://github.com/AgoraIO/OpenLive-Voice-Only-iOS/issues)
+- You can file bugs about this demo at [issue](https://github.com/AgoraIO/Basic-Audio-Broadcasting/issues)
 
 ## License
 
