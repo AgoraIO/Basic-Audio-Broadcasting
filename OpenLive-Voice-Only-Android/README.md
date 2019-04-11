@@ -25,9 +25,11 @@ A tutorial demo can be found here: [Agora-Android-Voice-Tutorial-1to1](https://g
 - The recommended way to integrate:
 
 Add the address which can integrate the Agora Voice SDK automatically through JCenter in the property of the dependence of the "app/build.gradle":
+
 ```
-compile 'io.agora.rtc:voice-sdk:2.1.0'
+implementation 'io.agora.rtc:voice-sdk:2.4.0'
 ```
+
 (This sample program has added this address and do not need to add again. Adding the link address is the most important step if you want to integrate the Agora Voice SDK in your own application.)
 
 - Alternative way to integrate:
@@ -45,7 +47,7 @@ compile fileTree(dir: 'libs', include: ['*.jar'])
 Or use `Gradle` to build and run.
 
 ## Developer Environment Requirements
-- Android Studio 2.0 or above
+- Android Studio 3.0 or above
 - Real devices (Nexus 5X or other devices)
 - Some simulators are function missing or have performance issue, so real device is the best choice
 
