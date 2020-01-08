@@ -18,7 +18,6 @@
 @end
 
 @implementation MainViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self updateViews];
@@ -94,5 +93,4 @@
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
-
 @end

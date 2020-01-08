@@ -6,9 +6,9 @@
 //  Copyright © 2017 Agora. All rights reserved.
 //
 
-#import <AgoraAudioKit/AgoraRtcEngineKit.h>
+#import <AgoraRtcKit/AgoraRtcEngineKit.h>
 #import "RoomViewController.h"
-#import "AppID.h"
+#import "KeyCenter.h"
 #import "InfoCell.h"
 #import "InfoModel.h"
 
@@ -24,7 +24,6 @@
 static NSString *cellID = @"infoID";
 
 @implementation RoomViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self updateViews];
@@ -39,7 +38,7 @@ static NSString *cellID = @"infoID";
 
 #pragma mark- initAgoraKit
 - (void)loadAgoraKit {
-    self.agoraKit = [AgoraRtcEngineKit sharedEngineWithAppId:[AppID appID] delegate:self];
+    self.agoraKit = [AgoraRtcEngineKit sharedEngineWithAppId:[KeyCenter AppId] delegate:self];
     
     [self.agoraKit setChannelProfile:AgoraChannelProfileLiveBroadcasting];
     
@@ -194,5 +193,4 @@ static NSString *cellID = @"infoID";
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
-
 @end

@@ -9,7 +9,6 @@
 #import "RoleButton.h"
 
 @implementation RoleButton
-
 - (void)layoutSubviews {
     [super layoutSubviews];
     CGFloat imageViewWH = 44;
@@ -34,5 +33,4 @@
         [path fill];
     }
 }
-
 @end
