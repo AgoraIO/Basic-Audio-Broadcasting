@@ -9,7 +9,6 @@
 #import "InfoCell.h"
 
 @implementation InfoCell
-
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.infoLabel.textColor = [UIColor whiteColor];

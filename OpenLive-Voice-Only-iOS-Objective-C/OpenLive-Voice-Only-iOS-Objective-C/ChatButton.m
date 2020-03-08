@@ -9,7 +9,6 @@
 #import "ChatButton.h"
 
 @implementation ChatButton
-
 - (void)layoutSubviews {
     [super layoutSubviews];
     CGFloat imageViewWH = 44;
@@ -26,5 +25,4 @@
     self.selected = !self.selected;
     [super sendAction:action to:target forEvent:event];
 }
-
 @end
