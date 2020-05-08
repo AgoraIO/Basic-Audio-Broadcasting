@@ -159,6 +159,8 @@ public class LiveRoomActivity extends BaseActivity implements AGEventHandler {
         log.info("onSwitchSpeakerClicked " + view + " " + mAudioMuted + " " + mAudioRouting);
 
         RtcEngine rtcEngine = rtcEngine();
+        // Enables/Disables the audio playback route to the speakerphone.
+        // This method sets whether the audio is routed to the speakerphone or earpiece. After calling this method, the SDK returns the onAudioRouteChanged callback to indicate the changes.
         rtcEngine.setEnableSpeakerphone(mAudioRouting != 3);
     }
 
@@ -302,6 +304,8 @@ public class LiveRoomActivity extends BaseActivity implements AGEventHandler {
         log.info("onVoiceMuteClicked " + view + " audio_status: " + mAudioMuted);
 
         RtcEngine rtcEngine = rtcEngine();
+        // Stops/Resumes sending the local audio stream.
+        // A successful muteLocalAudioStream method call triggers the onUserMuteAudio callback on the remote client.
         rtcEngine.muteLocalAudioStream(mAudioMuted = !mAudioMuted);
 
         ImageView iv = (ImageView) view;

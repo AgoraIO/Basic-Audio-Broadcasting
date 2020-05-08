@@ -185,6 +185,9 @@ public class WorkerThread extends Thread {
                 log.error(Log.getStackTraceString(e));
                 throw new RuntimeException("NEED TO check rtc sdk init fatal error\n" + Log.getStackTraceString(e));
             }
+
+            // Sets the channel profile of the Agora RtcEngine.
+            // The Agora RtcEngine differentiates channel profiles and applies different optimization algorithms accordingly. For example, it prioritizes smoothness and low latency for a video call, and prioritizes video quality for a video broadcast.
             mRtcEngine.setChannelProfile(Constants.CHANNEL_PROFILE_LIVE_BROADCASTING);
             mRtcEngine.enableAudioVolumeIndication(200, 3, false); // 200 ms
             mRtcEngine.setLogFile(Environment.getExternalStorageDirectory()
