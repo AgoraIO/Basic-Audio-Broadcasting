@@ -15,16 +15,23 @@
 		07CCB7D01E976BAF00D25FB1 /* LogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCB7CB1E976BAF00D25FB1 /* LogCell.swift */; };
 		07CCB7D11E976BAF00D25FB1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCB7CC1E976BAF00D25FB1 /* MainViewController.swift */; };
 		07CCB7D21E976BAF00D25FB1 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCB7CD1E976BAF00D25FB1 /* RoomViewController.swift */; };
-		A70E43DD23C5C63400FC9581 /* AgoraRtcKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70E43DA23C5C59D00FC9581 /* AgoraRtcKit.framework */; };
-		A7733D922407BE4400483870 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7733D912407BE4400483870 /* Accelerate.framework */; };
-		A7733D942407BE6000483870 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7733D932407BE6000483870 /* AudioToolbox.framework */; };
-		A7733D962407BE6900483870 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7733D952407BE6900483870 /* AVFoundation.framework */; };
-		A7733D982407BE7500483870 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7733D972407BE7500483870 /* CoreMedia.framework */; };
-		A7733D9A2407BE8900483870 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7733D992407BE8900483870 /* CoreTelephony.framework */; };
-		A7733D9C2407BE9900483870 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7733D9B2407BE9100483870 /* libc++.tbd */; };
-		A7733D9E2407BEA900483870 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7733D9D2407BEA300483870 /* libresolv.tbd */; };
-		A7733DA02407BEB100483870 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7733D9F2407BEB100483870 /* SystemConfiguration.framework */; };
+		A7958D4C246D585D00319E10 /* AgoraRtcKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70E43DA23C5C59D00FC9581 /* AgoraRtcKit.framework */; };
+		A7958D4D246D585D00319E10 /* AgoraRtcKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A70E43DA23C5C59D00FC9581 /* AgoraRtcKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7958D4E246D585D00319E10 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A7958D4D246D585D00319E10 /* AgoraRtcKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		07CCB7B31E976AF100D25FB1 /* OpenLiveVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenLiveVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,15 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7733D962407BE6900483870 /* AVFoundation.framework in Frameworks */,
-				A7733DA02407BEB100483870 /* SystemConfiguration.framework in Frameworks */,
-				A7733D9C2407BE9900483870 /* libc++.tbd in Frameworks */,
-				A70E43DD23C5C63400FC9581 /* AgoraRtcKit.framework in Frameworks */,
-				A7733D922407BE4400483870 /* Accelerate.framework in Frameworks */,
-				A7733D942407BE6000483870 /* AudioToolbox.framework in Frameworks */,
-				A7733D9A2407BE8900483870 /* CoreTelephony.framework in Frameworks */,
-				A7733D982407BE7500483870 /* CoreMedia.framework in Frameworks */,
-				A7733D9E2407BEA900483870 /* libresolv.tbd in Frameworks */,
+				A7958D4C246D585D00319E10 /* AgoraRtcKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +134,7 @@
 				07CCB7AF1E976AF100D25FB1 /* Sources */,
 				07CCB7B01E976AF100D25FB1 /* Frameworks */,
 				07CCB7B11E976AF100D25FB1 /* Resources */,
+				A7958D4E246D585D00319E10 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
