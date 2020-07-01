@@ -17,9 +17,9 @@ The live voice broadcasting sample applications, demonstrate how to:
 
 Project Folder Name|Platform|Description
 ---|---|---
-[OpenLive-Voice-Only-Android](./Basic-Audio-Broadcasting/OpenLive-Voice-Only-Android)|Android|Android live voice broadcasting
-[OpenLive-Voice-Only-iOS-Objective-C](./Basic-Audio-Broadcasting/OpenLive-Voice-Only-iOS-Objective-C)|iOS(Objective-C)|iOS live voice broadcasting（Objective-C）
-[OpenLive-Voice-Only-iOS](./Basic-Audio-Broadcasting/OpenLive-Voice-Only-iOS)|iOS(Swift)|iOS live voice broadcasting（Swift）
+[OpenLive-Voice-Only-Android](./OpenLive-Voice-Only-Android)|Android|Android live voice broadcasting
+[OpenLive-Voice-Only-iOS-Objective-C](./OpenLive-Voice-Only-iOS-Objective-C)|iOS(Objective-C)|iOS live voice broadcasting（Objective-C）
+[OpenLive-Voice-Only-iOS](./OpenLive-Voice-Only-iOS)|iOS(Swift)|iOS live voice broadcasting（Swift）
 
 
 ## Contact Us
