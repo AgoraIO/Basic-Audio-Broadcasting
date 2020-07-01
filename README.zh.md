@@ -18,9 +18,9 @@
 
 项目文件夹名称|平台|描述
 ---|---|---
-[OpenLive-Voice-Only-Android](./Basic-Audio-Broadcasting/OpenLive-Voice-Only-Android)|Android|Android 多人音频连麦直播
-[OpenLive-Voice-Only-iOS-Objective-C](./Basic-Audio-Broadcasting/OpenLive-Voice-Only-iOS-Objective-C)|iOS(Objective-C)|iOS 多人音频连麦直播（Objective-C）
-[OpenLive-Voice-Only-iOS](./Basic-Audio-Broadcasting/OpenLive-Voice-Only-iOS)|iOS(Swift)|iOS 多人音频连麦直播（Swift）
+[OpenLive-Voice-Only-Android](./OpenLive-Voice-Only-Android)|Android|Android 多人音频连麦直播
+[OpenLive-Voice-Only-iOS-Objective-C](./OpenLive-Voice-Only-iOS-Objective-C)|iOS(Objective-C)|iOS 多人音频连麦直播（Objective-C）
+[OpenLive-Voice-Only-iOS](./OpenLive-Voice-Only-iOS)|iOS(Swift)|iOS 多人音频连麦直播（Swift）
 
 ## 联系我们
 
