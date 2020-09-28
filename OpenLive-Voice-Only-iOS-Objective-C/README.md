@@ -40,7 +40,7 @@ To build and run the sample application, get an App Id:
 
 ### Integrate the Agora Audio SDK
 
-1. Download the [Agora Voice SDK](https://www.agora.io/en/download/). Unzip the downloaded SDK package and copy the following files from the SDK `libs` folder into the sample application `OpenLive-Voice-Only-iOS-Objective-C` folder.
+1. Download the [Agora Voice SDK](https://docs.agora.io/cn/2.5/download). Unzip the downloaded SDK package and copy the following files from the SDK `libs` folder into the sample application `OpenLive-Voice-Only-iOS-Objective-C` folder.
 
     - `AgoraRtcKit.framework`
   
