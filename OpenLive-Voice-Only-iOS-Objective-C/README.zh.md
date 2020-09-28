@@ -20,7 +20,7 @@
 return "YOUR APPID"
 ```
 
-然后在 [Agora.io SDK](https://www.agora.io/cn/blog/download/) 下载 **语音通话 + 直播 SDK**，解压后将其中的 **libs/AgoraAudioKit.framework** 复制到本项目的 “OpenLive-Voice-Only-iOS-Objective-C” 文件夹下。
+然后在 [Agora.io SDK](https://docs.agora.io/cn/2.5/download) 下载 **语音通话 + 直播 SDK**，解压后将其中的 **libs/AgoraAudioKit.framework** 复制到本项目的 “OpenLive-Voice-Only-iOS-Objective-C” 文件夹下。
 
 最后使用 XCode 打开 OpenLive-Voice-Only-iOS-Objective-C.xcodeproj，连接 iPhone／iPad 测试设备，设置有效的开发者签名后即可运行。
 
