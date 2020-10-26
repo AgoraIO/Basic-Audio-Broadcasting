@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		032C0F942546DFD900D80A57 /* Agorafdkaac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032C0F902546DFD500D80A57 /* Agorafdkaac.framework */; };
+		032C0F952546DFD900D80A57 /* Agorafdkaac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 032C0F902546DFD500D80A57 /* Agorafdkaac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		032C0F962546DFDA00D80A57 /* AgoraSoundTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032C0F912546DFD500D80A57 /* AgoraSoundTouch.framework */; };
+		032C0F972546DFDA00D80A57 /* AgoraSoundTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 032C0F912546DFD500D80A57 /* AgoraSoundTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A70E43D423C5C36D00FC9581 /* KeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A70E43D223C5C36D00FC9581 /* KeyCenter.m */; };
 		A72C5DD01F7F8C13004F1EA2 /* RoleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C5DCF1F7F8C13004F1EA2 /* RoleButton.m */; };
 		A7958D55246D598700319E10 /* AgoraRtcKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70E43D523C5C3AD00FC9581 /* AgoraRtcKit.framework */; };
@@ -32,6 +36,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				A7958D56246D598700319E10 /* AgoraRtcKit.framework in Embed Frameworks */,
+				032C0F972546DFDA00D80A57 /* AgoraSoundTouch.framework in Embed Frameworks */,
+				032C0F952546DFD900D80A57 /* Agorafdkaac.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		032C0F902546DFD500D80A57 /* Agorafdkaac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Agorafdkaac.framework; sourceTree = "<group>"; };
+		032C0F912546DFD500D80A57 /* AgoraSoundTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraSoundTouch.framework; sourceTree = "<group>"; };
 		A70E43D223C5C36D00FC9581 /* KeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyCenter.m; sourceTree = "<group>"; };
 		A70E43D323C5C36D00FC9581 /* KeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyCenter.h; sourceTree = "<group>"; };
 		A70E43D523C5C3AD00FC9581 /* AgoraRtcKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraRtcKit.framework; sourceTree = "<group>"; };
@@ -80,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032C0F942546DFD900D80A57 /* Agorafdkaac.framework in Frameworks */,
+				032C0F962546DFDA00D80A57 /* AgoraSoundTouch.framework in Frameworks */,
 				A7958D55246D598700319E10 /* AgoraRtcKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +170,8 @@
 		A7D6134C1F7DDEE60033A5CC /* OpenLive-Voice-Only-iOS-Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				032C0F902546DFD500D80A57 /* Agorafdkaac.framework */,
+				032C0F912546DFD500D80A57 /* AgoraSoundTouch.framework */,
 				A7237F5A2126A64100F2F397 /* Controllers */,
 				A7237F592126A63900F2F397 /* Views */,
 				A7237F582126A63100F2F397 /* Models */,
