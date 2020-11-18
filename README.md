@@ -1,4 +1,5 @@
 # Basic Audio Broadcasting
+# **This Project has been deprecated and archived. We will stop maintain it. Please look at https://github.com/AgoraIO/API-Examples for latest Agora Samples.**
 
 *English | [中文](README.zh.md)*
 
